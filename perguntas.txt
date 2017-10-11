@@ -1,0 +1,7 @@
+Nome
+Idade
+Genero
+Cidade
+Local Nascimento
+RG
+CPF

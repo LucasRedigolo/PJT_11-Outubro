@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace PJT_11_Outubro
 {
@@ -6,7 +7,20 @@ namespace PJT_11_Outubro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string[] perguntas = File.ReadAllLines(@"perguntas.txt");
+            string[] respostas = new string[perguntas.Length];
+
+            StreamWriter respostasSaida = new StreamWriter("respostas.csv");
+
+            for (int i=0; i < perguntas.Length; i++)
+            {
+                Console.WriteLine(perguntas[i]);
+                respostas[i] = Console.ReadLine();
+                respostasSaida.Write(respostas[i]);
+                respostasSaida.Write("; ");
+            }
+
+            respostasSaida.Close();
         }
     }
 }
