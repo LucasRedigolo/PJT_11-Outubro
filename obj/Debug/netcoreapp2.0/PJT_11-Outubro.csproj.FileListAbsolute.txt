@@ -1,0 +1,10 @@
+c:\Users\FIC\Desktop\PJT_11-Outubro\bin\Debug\netcoreapp2.0\PJT_11-Outubro.deps.json
+c:\Users\FIC\Desktop\PJT_11-Outubro\bin\Debug\netcoreapp2.0\PJT_11-Outubro.runtimeconfig.json
+c:\Users\FIC\Desktop\PJT_11-Outubro\bin\Debug\netcoreapp2.0\PJT_11-Outubro.runtimeconfig.dev.json
+c:\Users\FIC\Desktop\PJT_11-Outubro\bin\Debug\netcoreapp2.0\PJT_11-Outubro.dll
+c:\Users\FIC\Desktop\PJT_11-Outubro\bin\Debug\netcoreapp2.0\PJT_11-Outubro.pdb
+c:\Users\FIC\Desktop\PJT_11-Outubro\obj\Debug\netcoreapp2.0\PJT_11-Outubro.csproj.CoreCompileInputs.cache
+c:\Users\FIC\Desktop\PJT_11-Outubro\obj\Debug\netcoreapp2.0\PJT_11-Outubro.AssemblyInfoInputs.cache
+c:\Users\FIC\Desktop\PJT_11-Outubro\obj\Debug\netcoreapp2.0\PJT_11-Outubro.AssemblyInfo.cs
+c:\Users\FIC\Desktop\PJT_11-Outubro\obj\Debug\netcoreapp2.0\PJT_11-Outubro.dll
+c:\Users\FIC\Desktop\PJT_11-Outubro\obj\Debug\netcoreapp2.0\PJT_11-Outubro.pdb
