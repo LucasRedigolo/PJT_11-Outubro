@@ -9,44 +9,50 @@ namespace PJT_11_Outubro
         {   
             int sair = 1;
             bool ConverteuSair = false;
-            string[] perguntas = File.ReadAllLines(@"perguntas.txt");
-            string[] respostas = new string[perguntas.Length];
+            string[] Perguntas = File.ReadAllLines(@"perguntas.txt");
+            string[] Respostas = new string[Perguntas.Length];
 
-            StreamWriter respostasSaida = new StreamWriter("respostas.csv", true);
+            StreamWriter RespostasSaida = new StreamWriter("respostas.csv", true);
+            FileInfo Arquivo = new FileInfo("respostas.csv");
 
-            for (int i=0; i < perguntas.Length; i++)
-
+            if (Arquivo.Length == 0)
             {
+                for (int i=0; i < Perguntas.Length; i++)
+                {
+                RespostasSaida.Write(Perguntas[i]);
+                RespostasSaida.Write("; ");
+                }
 
-            respostasSaida.Write(perguntas[i]);
-            respostasSaida.Write("; ");
-
+                RespostasSaida.WriteLine();
             }
-
-            respostasSaida.WriteLine();
+            
 
             do{
 
-            for (int i=0; i < perguntas.Length; i++)
+            for (int i=0; i < Perguntas.Length; i++)
             {
-                Console.WriteLine(perguntas[i]);
-                respostas[i] = Console.ReadLine();
-                respostasSaida.Write(respostas[i]);
-                respostasSaida.Write("; ");
-
+                Console.WriteLine(Perguntas[i]);
+                Respostas[i] = Console.ReadLine();
+                RespostasSaida.Write(Respostas[i]);
+                RespostasSaida.Write("; ");
             }
 
-            respostasSaida.WriteLine();
+            RespostasSaida.WriteLine();
             Console.WriteLine("\nDigite 1 para inserir novo cadastro ou aperte qualquer tecla+Enter para finalizar.");
             ConverteuSair = int.TryParse(Console.ReadLine(), out sair);
             Console.WriteLine();
 
-
             }while (sair == 1);
+<<<<<<< HEAD
 
             Console.WriteLine("Cadastro Finalizado!");
 
             respostasSaida.Close();
+=======
+            
+            Console.WriteLine("Cadastro Finalizado!");
+            RespostasSaida.Close();
+>>>>>>> e2aa329ac391cf89fb8240024b2253d1764b5d03
         }
     }
 }
