@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\FIC\\Desktop\\PJT_11-Outubro\\PJT_11-Outubro.csproj",
+      "projectUniqueName": "C:\\Users\\FIC\\Desktop\\PJT_11-Outubro\\PJT_11-Outubro.csproj",
       "projectName": "PJT_11-Outubro",
-      "projectPath": "c:\\Users\\FIC\\Desktop\\PJT_11-Outubro\\PJT_11-Outubro.csproj",
+      "projectPath": "C:\\Users\\FIC\\Desktop\\PJT_11-Outubro\\PJT_11-Outubro.csproj",
       "packagesPath": "C:\\Users\\FIC\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\FIC\\Desktop\\PJT_11-Outubro\\obj\\",
+      "outputPath": "C:\\Users\\FIC\\Desktop\\PJT_11-Outubro\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
