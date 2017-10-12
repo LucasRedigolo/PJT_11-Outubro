@@ -6,21 +6,46 @@ namespace PJT_11_Outubro
     class Program
     {
         static void Main(string[] args)
-        {
-            string[] perguntas = File.ReadAllLines(@"perguntas.txt");
-            string[] respostas = new string[perguntas.Length];
+        {   
+            int sair = 1;
+            bool ConverteuSair = false;
+            string[] Perguntas = File.ReadAllLines(@"perguntas.txt");
+            string[] Respostas = new string[Perguntas.Length];
 
-            StreamWriter respostasSaida = new StreamWriter("respostas.csv");
+            StreamWriter RespostasSaida = new StreamWriter("respostas.csv", true);
+            FileInfo Arquivo = new FileInfo("respostas.csv");
 
-            for (int i=0; i < perguntas.Length; i++)
+            if (Arquivo.Length == 0)
             {
-                Console.WriteLine(perguntas[i]);
-                respostas[i] = Console.ReadLine();
-                respostasSaida.Write(respostas[i]);
-                respostasSaida.Write("; ");
+                for (int i=0; i < Perguntas.Length; i++)
+                {
+                RespostasSaida.Write(Perguntas[i]);
+                RespostasSaida.Write("; ");
+                }
+
+                RespostasSaida.WriteLine();
+            }
+            
+
+            do{
+
+            for (int i=0; i < Perguntas.Length; i++)
+            {
+                Console.WriteLine(Perguntas[i]);
+                Respostas[i] = Console.ReadLine();
+                RespostasSaida.Write(Respostas[i]);
+                RespostasSaida.Write("; ");
             }
 
-            respostasSaida.Close();
+            RespostasSaida.WriteLine();
+            Console.WriteLine("\nDigite 1 para inserir novo cadastro ou aperte qualquer tecla+Enter para finalizar.");
+            ConverteuSair = int.TryParse(Console.ReadLine(), out sair);
+            Console.WriteLine();
+
+            }while (sair == 1);
+            
+            Console.WriteLine("Cadastro Finalizado!");
+            RespostasSaida.Close();
         }
     }
 }
