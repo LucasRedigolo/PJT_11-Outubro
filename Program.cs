@@ -43,16 +43,10 @@ namespace PJT_11_Outubro
             Console.WriteLine();
 
             }while (sair == 1);
-<<<<<<< HEAD
 
-            Console.WriteLine("Cadastro Finalizado!");
-
-            respostasSaida.Close();
-=======
-            
             Console.WriteLine("Cadastro Finalizado!");
             RespostasSaida.Close();
->>>>>>> e2aa329ac391cf89fb8240024b2253d1764b5d03
+
         }
     }
 }
