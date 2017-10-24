@@ -46,7 +46,6 @@ namespace PJT_11_Outubro
 
             Console.WriteLine("Cadastro Finalizado!");
             RespostasSaida.Close();
-
         }
     }
 }
